@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Decorator
+namespace WeatherProvider
 {
-    class Program
+    public interface IWeatherProvider
     {
-        static void Main(string[] args)
-        {
-
-        }
+        WeatherInfo GetWeather(string city);
     }
 }
